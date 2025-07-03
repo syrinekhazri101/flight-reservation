@@ -1,0 +1,45 @@
+<div style="min-height: 600px;">
+  <h1>MES RÉSERVATIONS</h1>
+
+    @if(listeReservation.length == 0){
+      <p class="introduction">
+        Vous n'avez pas encore effectué de réservation.
+      </p>
+    }
+    @else{<p class="introduction">
+        Voici vos réservations confirmées. Merci de choisir notre compagnie !
+      </p>
+  @for(Reservation of listeReservation; track $index){
+    @if(Reservation.status=="en attente"){
+
+    <div class="confirmation-container">
+        <h2>✅ Réservation à Confirmée !</h2>
+
+        <div class="details">
+            <p><strong>Vol :</strong>{{Reservation.numeroVol}}</p>
+            <p><strong>Destination :</strong> {{Reservation.villeDestination}}</p>
+            <p><strong>Date de départ :</strong>{{Reservation.dateDepart}}</p>
+
+            <p><strong>Prix :</strong>{{Reservation.prix}} TDN</p>
+        </div>
+
+        <div class="actions">
+            <button type="submit" (click)="confirmer(Reservation.id)"> ✅ confirmer réservation</button>
+            <button type="button" (click)="annuler(Reservation.id)">❌ annuler réservation</button>
+        </div>
+    </div>
+
+
+    }
+    @else {
+
+       <app-billet [Reservation]="Reservation"></app-billet>
+    }
+
+  }
+
+}
+
+    <button (click)="navigateToHome()" style="left:45%">🏠 Retour à l'accueil</button>
+
+</div>

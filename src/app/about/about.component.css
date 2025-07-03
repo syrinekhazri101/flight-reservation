@@ -1,0 +1,66 @@
+.c1 {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #f0f4f7, #d9eaf1);
+  text-align: center;
+  position: relative;
+  height:100%;
+  top:90px;
+
+}
+header {
+  color: rgb(103, 174, 232);
+  padding: 20px;
+}
+section {
+  padding: 20px;
+  background: white;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.service {
+  background: rgba(87, 87, 145, 0.834);
+  padding: 15px;
+  border-radius: 5px;
+  width: 30%;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+h1 {
+  font-size: 2.8rem;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin: 15px ;
+  font-weight: 600;
+  padding-left: 15px;
+}

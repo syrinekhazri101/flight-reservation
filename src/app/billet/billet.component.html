@@ -1,0 +1,31 @@
+<div id="carte-embarquement">
+<div class="ticket" >
+  <div class="header">
+    <div class="logo">
+     <img src="logo.png" height="80px" alt="logo" >
+    </div>
+    <div class="flight">
+      <p><strong>CARTE D'EMBARQUEMENT</strong></p>
+    </div>
+  </div>
+  <div class="main">
+    <div class="left">
+      <p><strong>Numéro de Vol :</strong>{{Reservation.numeroVol}} </p>
+      <p><strong>Nom :</strong> {{Reservation.prenom}} {{Reservation.nom}}</p>
+      <p><strong>De :</strong> {{Reservation.villeDepart}}</p>
+      <p><strong>À :</strong>{{Reservation.villeDestination}}</p>
+      <p><strong>Date :</strong> {{Reservation.dateDepart}}</p>
+    </div>
+    <div class="right">
+      <p><strong>Heure d'Embarquement :</strong> {{Reservation.heureDepart | addHeure:-1 }}</p>
+      <p><strong>Classe :</strong> {{Reservation.classe}}</p>
+      <p><strong>Heure de Départ :</strong> {{Reservation.heureDepart }}</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Bienvenue à bord de nos vols !</p>
+
+  </div>
+</div>
+</div>
+  <button class="print-button" (click)="printCarte()"> 🖨️Imprimer</button>

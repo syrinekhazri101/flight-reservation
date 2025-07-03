@@ -1,0 +1,20 @@
+
+  <div>
+    <img src="mbfogaqf.png" alt="img">
+    <ul>
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/listVol">Destinations</a></li>
+      <li><a routerLink="/about">À propos</a></li>
+      @if(this.connected==="false" || this.connected===""){
+      <li><a routerLink="/signup">Se connecter | S'inscrire</a></li>
+      }
+      @else {
+      <li><a style="text-decoration: underline;color:rgb(42, 39, 39);
+        text-decoration: none;
+        font-size: large;
+        font-weight: bold;" (click)="deconnecer()" routerLink="/home">Se déconnecter</a></li>
+
+        }
+    </ul>
+  </div>
+

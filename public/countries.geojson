@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Algeria"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-8.667, 27.656],
+            [1.000, 27.656],
+            [1.000, 37.000],
+            [-8.667, 37.000],
+            [-8.667, 27.656]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tunisia"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [7.524, 30.236],
+            [11.482, 30.236],
+            [11.482, 37.349],
+            [7.524, 37.349],
+            [7.524, 30.236]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "France"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-5.142, 41.333],
+            [9.561, 41.333],
+            [9.561, 51.124],
+            [-5.142, 51.124],
+            [-5.142, 41.333]
+          ]
+        ]
+      }
+    }
+  ]
+}

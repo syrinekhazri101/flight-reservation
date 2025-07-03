@@ -1,0 +1,71 @@
+<div class="container mt-5" style="position: relative;left: 100px;">
+
+
+      <h4>Ajouter une Réservation</h4>
+
+    <div class="card-body">
+      <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
+
+        <div class="mb-3">
+          <label for="passager_id" class="form-label">Passager</label>
+          <select class="form-select" formControlName="passager_id" required>
+
+            @for( user of utilisateurs;track $index){
+              <option [value]="user.id">{{ user.nom }} {{ user.prenom }}</option>
+          }
+          </select>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="vol_id" class="form-label">Vol</label>
+          <select class="form-select" formControlName="vol_id" required>
+
+            @for( vol of vols ;track $index){
+              <option [value]="vol.id">
+              {{ vol.numeroVol }} - {{ vol.villeDepart }} → {{ vol.villeDestination }}</option>
+
+            }
+
+          </select>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="dateReservation" class="form-label">Date de Réservation</label>
+          <input type="date" class="form-control" formControlName="dateReservation" required>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="montant" class="form-label">Montant</label>
+          <input type="number" class="form-control" formControlName="montant" required>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="status" class="form-label">Statut</label>
+          <select class="form-select" formControlName="status" required>
+            <option value="confirme">confirmé</option>
+            <option value="en attente">En attente</option>
+          </select>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="classe" class="form-label">Classe</label>
+          <select class="form-select" formControlName="classe" required>
+            <option value="Économique">Économique</option>
+            <option value="Affaires">Affaires</option>
+            <option value="Première">Première</option>
+          </select>
+        </div>
+
+
+          <button type="submit" class="btn btn-primary">Ajouter Réservation</button>
+
+
+      </form>
+    </div>
+
+</div>

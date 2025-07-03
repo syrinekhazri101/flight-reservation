@@ -1,0 +1,35 @@
+<h1>modifications une réservation</h1>
+<form (ngSubmit)="onSubmit()"  [formGroup]="editForm">
+  <div class="mb-3">
+    <label  class="form-label"> nom passager </label>
+    <input type="text" class="form-control" formControlName="nom_passager" readonly>
+
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">prenom passager</label>
+    <input type="text" class="form-control" formControlName="prenom_passager" readonly>
+
+  </div>
+  <div class="mb-3">
+    <label class="form-label">numero Vol</label>
+    <input type="text" class="form-control" formControlName="numeroVol" >
+  </div>
+  <div class="mb-3">
+    <label class="form-label">date Reservation</label>
+    <input type="text" class="form-control" formControlName="dateReservation" >
+  </div>
+  <div class="mb-3">
+    <label class="form-label">price</label>
+    <input type="text" class="form-control" formControlName="montant">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">status</label>
+    <input type="text" class="form-control" formControlName="status">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">classe</label>
+    <input type="text" class="form-control" formControlName="classe">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,33 @@
+<article class="card" (click)="detail(Vol.id)">
+
+  <div class="card">
+  @if(Vol.reduction>0){<div class="discount">-{{Vol.reduction*100}}%</div>
+  }
+    <div class="flight-card">
+
+      <img [src]="Vol.image" alt="image" />
+      <div class="details">
+        <div class="date">{{Vol.dateDepart}}. -  {{Vol.dateArrivee}}.</div>
+        <div class="route">{{Vol.villeDepart}} ↔ {{Vol.villeDestination}}</div>
+
+        @if(Vol.reduction>0){
+          <div class="prices">
+            <span style="text-decoration: line-through;color:#e63946 ;font-size: 0.9rem;margin-right: 8px;">{{Vol.prix}} TND</span>
+          </div>
+          <div style="  color:green;font-size: 1.2rem;font-weight: bold;">{{Vol.prix-(Vol.prix*Vol.reduction)}} TND</div>
+        }
+        @else {
+          <div class="prices">
+            <span class="new-price">{{Vol.prix}} TND</span>
+          </div>
+        }
+
+        <div class="note">Prix par passager</div>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+
+

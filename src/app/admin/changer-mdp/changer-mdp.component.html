@@ -1,0 +1,21 @@
+
+<div class="c1">
+    <div class="container">
+        <h2>Changer le mot de passe</h2>
+        <form  [formGroup]="changePasswordForm" (ngSubmit)="onSubmit()">
+            <label for="currentPassword">Mot de passe actuel</label>
+            <input type="password" id="currentPassword" name="currentPassword" required  formControlName="oldPassword">
+
+            <label for="newPassword">Nouveau mot de passe</label>
+            <input type="password" id="newPassword" name="newPassword" required formControlName="newPassword">
+
+            <label for="confirmPassword">Confirmer le nouveau mot de passe</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required  formControlName="confirmPassword">
+
+            <div class="error" id="errorMessage"></div>
+
+            <input type="submit" value="Changer le mot de passe">
+        </form>
+    </div>
+</div>
+

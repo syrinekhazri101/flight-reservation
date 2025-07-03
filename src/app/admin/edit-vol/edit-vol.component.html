@@ -1,0 +1,61 @@
+<h1>modifications de vols</h1>
+<form (ngSubmit)="onSubmit()"  [formGroup]="editForm">
+  <div class="mb-3">
+    <label  class="form-label">image</label>
+    <input type="text" class="form-control" formControlName="image">
+
+  </div>
+  <div class="mb-3">
+    <label class="form-label">numero Vol</label>
+    <input type="text" class="form-control" formControlName="numeroVol" >
+  </div>
+  <div class="mb-3">
+    <label class="form-label">ville Depart</label>
+    <input type="text" class="form-control" formControlName="villeDepart" >
+  </div>
+  <div class="mb-3">
+    <label class="form-label">aeroport Depart</label>
+    <input type="text" class="form-control" formControlName="aeroportDepart">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">date Depart</label>
+    <input type="text" class="form-control" formControlName="dateDepart">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">heure Depart</label>
+    <input type="text" class="form-control" formControlName="heureDepart">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">ville destination</label>
+    <input type="text" class="form-control" formControlName="villeDestination">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">aeroport destination</label>
+    <input type="text" class="form-control" formControlName="aeroportDestination">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">date Arrivee</label>
+    <input type="text" class="form-control" formControlName="dateArrivee">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">heure Arrivee</label>
+    <input type="text" class="form-control" formControlName="heureArrivee">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">duree</label>
+    <input type="text" class="form-control" formControlName="duree">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">prix</label>
+    <input type="number" class="form-control" formControlName="prix">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">places Disponibles</label>
+    <input type="number" class="form-control"  formControlName="placesDisponibles">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">reduction</label>
+    <input type="number" class="form-control"  formControlName="reduction">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

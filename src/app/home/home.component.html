@@ -1,0 +1,29 @@
+<div class="c2" >
+  <div class="c1" >
+    <div class="slogan">
+      <h1>Découvrez le Monde avec Tunisair</h1>
+      <p>Votre voyage commence ici. Explorez des destinations de rêve avec nous.</p>
+  </div>
+      <div style="width:70%;height: 60%; position: relative;left:15%">
+        <div id="map" style="height: 700px; width:100%;" ></div>
+      </div>
+      <router-outlet></router-outlet>
+
+  <div class="slogan">
+  <h1>Offres sur les vols</h1>
+  <p>Économisez et visitez ces destinations de rêve!</p>
+</div>
+<div style=" display: flex;flex-wrap: wrap;justify-content: center;padding: 20px;gap: 30px;position: relative;">
+
+@for(vol of listVol;track $index){
+  <app-vol [vol]="vol"></app-vol>
+}</div>
+
+  </div>
+
+</div>
+
+
+
+
+

@@ -1,0 +1,100 @@
+
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top:100px;
+  height: 600px;
+
+  z-index: 2;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color:black;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #e63946;
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+  top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 30px;
+  height: 55px;
+  background: #f2f2f2;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  width:400px;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #363636 0%, #4e4e4e 50%, #313131 100%);
+  box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap:5px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.c1{
+  font-family: Arial, sans-serif;
+  position: relative;
+  top:90px;
+   height:1100px;
+   background-image: url('/Tunisair-1.jpg');
+   background-size: cover;
+}
+.c1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(44, 43, 43, 0.232);
+  z-index: 1;
+}

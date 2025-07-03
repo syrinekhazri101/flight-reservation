@@ -1,0 +1,26 @@
+<div class="c1">
+<form class="form-control"  (ngSubmit)="onSubmit()"  [formGroup]="loginForm"  novalidate>
+  <p class="title">Créer un compte</p>
+
+  <div class="input-field">
+    <input required="" class="input" type="email" formControlName="mail"/>
+    <label class="label" for="input">Email</label>
+  </div>
+  @if ( isInvalidmail()) {
+    <div class="alert alert-danger">
+    email est un champs obligatoire
+    </div>
+    }
+  <div class="input-field">
+    <input required="" class="input" type="password" formControlName="mdp"/>
+    <label class="label" for="input"> Password</label>
+  </div>
+  @if ( isInvalidpassword()) {
+    <div class="alert alert-danger">
+      Password est un champs obligatoire
+    </div>
+    }
+
+  <button type="submit"class="submit-btn">Sign In</button>
+</form>
+</div>

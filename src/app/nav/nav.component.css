@@ -1,0 +1,36 @@
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(163, 162, 162, 0.258);
+  position: absolute;
+  height:100px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap:15px;
+  position: relative;
+  right: 100px;
+  width:700px;
+}
+
+a{
+  color:rgb(42, 39, 39);
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+ul li a button:hover {
+  text-decoration: underline;
+}
+img{
+  position: relative;
+  left: 150px;
+  height:200px ;
+  width:300px;
+}

@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 bg-dark sidebar">
+      <div class="text-center mt-3">
+        <img src="admin.jpg" width="90px" alt="Profile Image" class="rounded-circle mb-2">
+        <h5 class="text-white">{{admin.prenom}} {{admin.nom}}</h5>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['TableauVols']">Gestion des Vols</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['TableauReservations']">Gestion des réservations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['TableUsers']">Gestion des utilisateur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['../home']" (click)="deconnecter()">déconnecter</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" [routerLink]="['changerPassword']" >changer mot de passe</a>
+        </li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>

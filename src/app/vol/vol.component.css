@@ -1,0 +1,153 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  display: grid;
+  gap: 20px;
+  width:400px
+}
+
+.flight-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flight-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 16px;
+  text-align: left;
+}
+
+.details .date {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.details .route {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.details .prices {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.details.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
+
+.details .new-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.details .note {
+  font-size: 16px;
+  color: #ff8c00;
+  font-style: italic;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 1000px;
+  width:500px;
+
+}
+
+h1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.discount {
+  position: absolute;
+  right: 10px;
+  background: #ff5733;
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 10px;
+  width:70px;
+  height:30px;
+}
+
+input,
+select {
+  width: 70%;
+  padding: 8px;
+  position: relative;
+  bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+a{
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

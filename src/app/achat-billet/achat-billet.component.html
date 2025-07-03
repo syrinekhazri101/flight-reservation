@@ -1,0 +1,57 @@
+<div class="c1">
+
+    <h1>Réservation de Billet d'Avion</h1>
+
+  <div class="container">
+    <form [formGroup]="AchatForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+      <div class="form-group">
+        <label for="from">De:</label>
+        <input type="text" name="" id="" readonly formControlName="villeDepart">
+      </div>
+
+      <div class="form-group">
+        <label for="to">Vers:</label>
+        <input type="text" name="" id="" readonly formControlName="villeDestination">
+      </div>
+  </div>
+      <div class="form-group">
+        <label>Type de voyage:</label>
+        <select formControlName="TypeVoyage">
+          <option value="Aller simple">Aller simple</option>
+          <option value="Aller retour">Aller retour</option>
+        </select>
+      </div>
+      <div class="form-row">
+      <div class="form-group">
+        <label>Départ:</label>
+        <input type="text" readonly formControlName="heureDepart">
+      </div>
+
+      <div class="form-group">
+        <label>Retour:</label>
+        <input type="text"  formControlName="heureArrivee">
+      </div>
+</div>
+
+      <div class="form-group">
+        <label for="class">Classe:</label>
+        <select id="class" formControlName="class">
+          <option value="economique">Economique</option>
+          <option value="business">Business</option>
+          <option value="Première">Première</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <label for="price">Prix Total </label>
+        <input type="text" id="price" placeholder="Calculé automatiquement" readonly formControlName="price">
+    </div>
+    <div class="form-row">
+       <button type="button" (click)="onnavigateToHome()">Annuler</button>
+      <button type="submit" >Valider</button>
+     </div>
+    </form>
+  </div>
+</div>

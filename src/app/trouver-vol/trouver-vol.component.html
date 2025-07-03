@@ -1,0 +1,10 @@
+<div style="position:relative;top:100px">
+  <h1>Vols de la compagnie Tunisair</h1>
+  <h2>Découvrez nos vols directs de {{villeDepart}} à {{villeDestination}}</h2><br>
+
+<div  class="c1"  >
+  @for(vol of listVol ; track vol.id){
+    <app-vol [vol]="vol"></app-vol>
+  }
+  </div>
+</div>

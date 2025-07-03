@@ -1,0 +1,55 @@
+<div style="  background: linear-gradient(120deg, #f0f4f7, #d9eaf1); width: 100%;height: 100%;position: relative; top:100px">
+<div class="container">
+  <h2 class="title">Informations sur le vol</h2>
+  <div class="vol-details">
+      <div><span>Numéro de vol :</span> {{vol.numeroVol}}</div>
+      <div><span>Date :</span>{{vol.dateDepart}}</div>
+      <div><span>Heure de départ :</span>{{vol.heureDepart}}</div>
+      <div><span>Aéroport de départ :</span> {{vol.aeroportDepart}}</div>
+      <div><span>Date d'arrivée :</span> {{vol.dateArrivee}}</div>
+      <div><span>Aéroport d'arrivée :</span> {{vol.aeroportDestination}}</div>
+      <div><span>Durée :</span>{{vol.duree}}</div>
+  </div>
+
+  <h2 class="title">Options de classe</h2>
+  <div style=" display: grid;gap: 20px;">
+      <div class="card">
+          <h3>Classe Économique</h3>
+          <p>Prix : {{vol.prix}} TDN</p>
+          <p>Inclus : 20 kg bagage soute, 7 kg bagage cabine</p>
+      </div>
+      <div class="card">
+          <h3>Classe Affaires</h3>
+          <p>Prix :  {{vol.prix+150}} TDN</p>
+          <p>Inclus : 30 kg bagage soute, 10 kg bagage cabine</p>
+      </div>
+      <div class="card">
+          <h3>Première Classe</h3>
+          <p>Prix : {{vol.prix+250}} TDN</p>
+          <p>Inclus : 40 kg bagage soute, 15 kg bagage cabine</p>
+      </div>
+  </div>
+
+  <h2 class="title">Politique de bagages</h2>
+  <div class="baggage">
+      <ul>
+          <li>Économie : 20 kg en soute, 7 kg en cabine</li>
+          <li>Affaires : 30 kg en soute, 10 kg en cabine</li>
+          <li>Première Classe : 40 kg en soute, 15 kg en cabine</li>
+      </ul>
+  </div>
+
+  <h2 class="title">Galerie de photos</h2>
+  <div class="gallery">
+      <img src="vue.jpg" width="300px" alt="Vue de l'avion">
+      <img src="siege.jpg" width="300px" alt="Sièges de l'avion">
+      <img src="repas.jpg" width="300px" alt="Repas servis à bord">
+  </div>
+
+
+
+  <div class="reservation-button">
+      <button (click)="OnNavigateToReservation()">Réserver maintenant</button>
+  </div>
+</div>
+</div>

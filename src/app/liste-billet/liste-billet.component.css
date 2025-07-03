@@ -1,0 +1,105 @@
+div
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  height: auto;
+  text-align: center;
+  background: linear-gradient(120deg, #f0f4f7, #d9eaf1);
+top:90px
+}
+h1{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width:200px;
+  height: 3px;
+  background-color: #d61b1f;
+  margin: 10px auto 20px;
+}
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+
+
+.confirmation-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 0.8s ease-in-out;
+  position: absolute;
+  top:10px;
+
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.details {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+  text-align: left;
+  position: relative;
+  top:10px;
+}
+
+.details p {
+  margin: 8px 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  top:10px;
+
+  right:10px;
+  text-align: center;
+
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  position: relative;
+  left:5px;
+  width:350px
+}
+
+button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+button:last-child {
+  background-color: #28a745;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
